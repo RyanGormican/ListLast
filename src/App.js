@@ -20,10 +20,16 @@ function App() {
      
  }
  
-  const taskDone = (e) => {
+  const taskDone = (taskId) => {
      
  }
-  const taskIncomplete = (e) => {
+  const taskIncomplete = () => {
+     
+ }
+  const switchTask = (e) => {
+     
+ }
+   const changeTask = (e) => {
      
  }
   //  Retrieve from Local Storage 
