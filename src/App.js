@@ -4,8 +4,11 @@ imoprt { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleCheck, faPen, faTrashCan
 } from '@fortawesome/free-solid-svg-icons';
+import {nanoid} from 'nanoid';
 import React, {useState} from 'react';
 function App() {
+  
+  const [taskList, settaskList] = useState( [{taskId: nanoid(), taskText:'update the list with your tasks!', taskDone: false}]);
   return (
     <div className="container App">
     <br /><br />
