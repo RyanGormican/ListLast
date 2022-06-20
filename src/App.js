@@ -59,7 +59,8 @@ function App() {
           <span className="taskRank" {index + 1}</span>
           <span className="taskText" {task.taskTesk} </span>
           </div>
-        
+        <div className = "icons">
+         </div>
         </div>
       
     }
