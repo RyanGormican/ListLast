@@ -1,7 +1,6 @@
 const AddTask = ({addTask, setAddTask,  newTask })=> {
   return (
       <>
- // New Task
     <div className="row">
     <div className="col">
     <input value={addTask} onChange={ (e) => setAddTask(e.target.value)}
