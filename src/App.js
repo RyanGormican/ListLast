@@ -69,7 +69,10 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
   
       <div className="row>
     <div className="col">
-    <input className="form-control form-control-lg" />
+    <input 
+    value={ updateTask && updateTask.taskText }
+    onChange={ (e) => switchTask(e)}
+    className="form-control form-control-lg" />
     /div>
     <div className="col-auto">
     <button className="btn btn-lg btn-success"> Update Task</button>
