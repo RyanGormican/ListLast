@@ -1,9 +1,10 @@
-.App {
-  text-align: center;
-}
+
 body {
   background-color: #121212;
   color: white; 
+}
+.App {
+  text-align: center;
 }
 .taskBackground {
   background-color: #555;
@@ -15,16 +16,16 @@ body {
   margin-bottom: 20px;
 
 }
+.taskBackground div {
+   display: flex;
+  align-items: center; 
+}
 .taskBackground .taskText {
   flex: 1;
 }
 .taskBackground .isDone .taskText {
   opacity: 0.25;
   text-decoration: line-through;
-}
-.taskBackground div {
-   display: flex;
-  align-items: center; 
 }
 .taskBackground .icons {
   position: absolute;
