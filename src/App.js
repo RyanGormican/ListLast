@@ -100,20 +100,9 @@ className="btn btn-lg btn-success"> Cancel</button>
     <br />
   </>
   ) : (
-  <>
- // New Task
-    <div className="row">
-    <div className="col">
-    <input value={addTask} onChange={ (e) => setAddTask(e.target.value)}
+  <AddTask
     
-    className="form-control form-control-lg" />
-    </div>
-    <div className="col-auto">
-    <button onClick={newTask} className="btn btn-lg btn-success"> New Task</button>
-    </div>
-    </div>
-    <br />    
-  </>
+    />
   )}
     
 
