@@ -26,6 +26,20 @@ body {
    display: flex;
   align-items: center; 
 }
+.taskBackground .icons {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: auto;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+.taskBackground .icons span {
+   cursor: pointer;
+  color: #00ff89;
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+}
 .taskRank {
   color: #999;
   border: 1px solid #999;
@@ -38,6 +52,4 @@ body {
   height: 26px;
   width: 26px;
   display: flex; 
-  
-  
 }
