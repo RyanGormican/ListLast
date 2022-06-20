@@ -22,7 +22,7 @@ function App() {
        };
        const newList = [...taskList, newTask];
        setTaskList(newList);
-         
+       setAddTask('');
      }
  };
    
