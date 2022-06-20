@@ -56,19 +56,18 @@ function App() {
       <React.Fragment key={task.taskId}>
       <div className="col taskBackground"> 
         <div className={task.taskDone ? 'isDone' : ''}>
-          <span className="taskRank" {index + 1}</span>
-          <span className="taskText" {task.taskTesk} </span>
+          <span className="taskText" >{task.taskTesk} </span>
           </div>
         <div className = "icons">
-          <span>
+           <span title="Status">
+          <FontAwesomeIcon icon={faCircleCheck} />
+          </span>
+          <span title="Update">
           <FontAwesomeIcon icon={faPen} />
-          </span
-          <span>
+          </span>
+          <span title="Remove">
          <FontAwesomeIcon icon={faTrashCan} />
-          </span
-  <span>
-          
-          </span
+          </span>
          </div>
         </div>
       
