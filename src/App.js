@@ -69,7 +69,7 @@ function App() {
     className="form-control form-control-lg" />
     /div>
     <div className="col-auto">
-    <button className="btn btn-lg btn-success"> New Task</button>
+    <button onClick={newTask} className="btn btn-lg btn-success"> New Task</button>
     </div>
     </div>
     <br />
