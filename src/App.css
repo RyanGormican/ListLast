@@ -1,4 +1,6 @@
-
+h2{
+   font-family: Helvetica, Georgia, sans-serif;
+}
 body {
   background-color: #121212;
   color: white; 
@@ -17,6 +19,7 @@ body {
 }
 span{
  color: white; 
+ font-family: Helvetica, Georgia, sans-serif;
 }
 .taskBackground div {
    display: flex;
