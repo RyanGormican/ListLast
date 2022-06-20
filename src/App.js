@@ -49,7 +49,19 @@ function App() {
     <br /><br />
     <h2> ListLast </h2>
     <br /><br />
+  
+      <div className="row>
+    <div className="col">
+    <input className="form-control form-control-lg" />
+    /div>
+    <div className="col-auto">
+    <button className="btn btn-lg btn-success"> Update Task</button>
+        <button className="btn btn-lg btn-success"> Cancel</button>
+    </div>
+    </div>
+    <br />
     
+  // New Task
     <div className="row>
     <div className="col">
     <input className="form-control form-control-lg" />
@@ -59,7 +71,7 @@ function App() {
     </div>
     </div>
     <br />
-    
+  
     {taskList && taskList.length ? '' : 'Nothing on the To do list!"
     {taskList && taskList.map( (task, index) => {
     return(
