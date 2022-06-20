@@ -71,7 +71,7 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     <br /><br />
     <h2> ListLast </h2>
     <br /><br />
-  
+  // Update Task
       <div className="row>
     <div className="col">
     <input 
@@ -80,7 +80,9 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     className="form-control form-control-lg" />
     /div>
     <div className="col-auto">
-    <button className="btn btn-lg btn-success"> Update Task</button>
+    <button 
+    onClick={changeTask}
+className="btn btn-lg btn-success"> Update Task</button>
         <button className="btn btn-lg btn-success"> Cancel</button>
     </div>
     </div>
