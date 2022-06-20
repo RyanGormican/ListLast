@@ -55,7 +55,10 @@ function App() {
     <input className="form-control form-control-lg" />
     /div>
     <div className="col-auto">
-    
+    <button className="btn btn-lg btn-success"> New Task</button>
+    </div>
+    </div>
+    <br />
     
     {taskList && taskList.length ? '' : 'Nothing on the To do list!"
     {taskList && taskList.map( (task, index) => {
