@@ -106,9 +106,12 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
             >
           <FontAwesomeIcon icon={faCircleCheck} />
           </span>
+
+{task.taskDone ? null : (
           <span title="Update">
           <FontAwesomeIcon icon={faPen} />
           </span>
+)}
           <span title="Remove"
           onClick={() =>removeTask(task.taskId)}
           >
