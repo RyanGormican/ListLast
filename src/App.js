@@ -44,7 +44,11 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
      setUpdateTask('');
  }
   const switchTask = (e) => {
-     
+     let newTask = {
+      taskId: updateTask.taskId,
+      taskText: e.target.value,
+      taskDone: updateTask.taskDone ? true : false
+     }
  }
    const changeTask = (e) => {
      
