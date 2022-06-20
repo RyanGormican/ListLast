@@ -38,10 +38,10 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
        }
        return task;
      })
-     setTasjList(newList);
+     setTaskList(newList);
  }
-  const taskIncomplete = () => {
-     
+  const clearTask = () => {
+     setUpdateTask('');
  }
   const switchTask = (e) => {
      
