@@ -1,4 +1,5 @@
-const IconButtons = ({ })=> {
+import React from 'react';
+const IconButtons = ({ taskList })=> {
   return (
        {taskList && taskList.map( (task, index) => {
     return(
