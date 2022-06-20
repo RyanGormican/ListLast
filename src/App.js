@@ -94,7 +94,13 @@ newTask={newTask}
 
   
     {taskList && taskList.length ? '' : 'Nothing on the To do list!"
-   <
+   <IconButons
+     taskList = {taskList}
+     taskDone = {taskDone}
+     setUpdateTask = {setUpdateTask}
+     removeTask = {removeTask}
+      
+      >
     </div>
   );
 }
