@@ -13,8 +13,18 @@ function App() {
   const [updateTask, setUpdateTask] = usetState('');
   
  const newTask = () => {
-     
- }
+     if (taskList)
+     {
+       const newTask = {
+         taskId: nanoid(),
+         taskText: addTask,
+         taskDone: false 
+       };
+       const newList = [...taskList, newTask];
+       setTaskList(newList);
+         
+     }
+ };
    
  const removeTask = (taskId) => {
      
