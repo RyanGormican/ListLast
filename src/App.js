@@ -60,6 +60,15 @@ function App() {
           <span className="taskText" {task.taskTesk} </span>
           </div>
         <div className = "icons">
+          <span>
+          <FontAwesomeIcon icon={faPen} />
+          </span
+          <span>
+         <FontAwesomeIcon icon={faTrashCan} />
+          </span
+  <span>
+          
+          </span
          </div>
         </div>
       
