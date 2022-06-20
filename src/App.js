@@ -51,7 +51,14 @@ function App() {
     <br /><br />
     
     {taskList && taskList.length ? '' : 'Nothing on the To do list!"
-    
+    {taskList && taskList.map( (task, index) => {
+    return(
+      <React.Fragment key={task.taskId}>
+      <div className="col taskBackground"> 
+        
+        </div>
+      
+    }
     </div>
   );
 }
