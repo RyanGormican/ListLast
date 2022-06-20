@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleCheck, faPen, faTrashCan
 } from '@fortawesome/free-solid-svg-icons';
-const IconButtons = ({ taskList })=> {
+const IconButtons = ({ taskList, taskDone, setUpdateTask, removeTask  })=> {
   return (
        {taskList && taskList.map( (task, index) => {
     return(
