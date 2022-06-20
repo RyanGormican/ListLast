@@ -59,7 +59,7 @@ function App() {
           <span className="taskText" >{task.taskTesk} </span>
           </div>
         <div className = "icons">
-           <span title="Status">
+           <span title="Change Status">
           <FontAwesomeIcon icon={faCircleCheck} />
           </span>
           <span title="Update">
