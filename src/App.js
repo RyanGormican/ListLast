@@ -13,7 +13,7 @@ function App() {
   const [updateTask, setUpdateTask] = useState('');
   
  const newTask = () => {
-     if (taskList)
+     if (addTask)
      {
        const newTask = {
          taskId: nanoid(),
