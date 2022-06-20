@@ -50,11 +50,13 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
       taskDone: updateTask.taskDone ? true : false
      }
      setUpdateTask(newTask);
+    
  }
    const changeTask = () => {
      let filterList = [...taskList].filter( task => task.taskId !== updateTask.taskId);
      let newList = [...filterList, updateTask];
    setTaskList(newList);
+   setUpdateTask('');
  }
   //  Retrieve from Local Storage 
   useEffect(() => {
@@ -80,7 +82,7 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     value={ updateTask && updateTask.taskText }
     onChange={ (e) => switchTask(e)}
     className="form-control form-control-lg" />
-    /div>
+    </div>
     <div className="col-auto">
     <button 
     onClick={changeTask}
@@ -96,7 +98,7 @@ className="btn btn-lg btn-success"> Update Task</button>
     <input value={addTask} onChange={ (e) => setAddTask(e.target.value)}
     
     className="form-control form-control-lg" />
-    /div>
+    </div>
     <div className="col-auto">
     <button onClick={newTask} className="btn btn-lg btn-success"> New Task</button>
     </div>
