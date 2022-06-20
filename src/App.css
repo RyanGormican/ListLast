@@ -46,12 +46,12 @@ span{
 }
 .taskBackground .icons span {
    cursor: pointer;
-  color: #00ff89;
+  color: #005363;
   display: inline-block;
   margin: 0px 10px 0 10px;
 }
-taskBg .icons span:hover {
-  color: yellow;
+taskBackground .icons span:hover {
+  color: #00C8F0;
 }
 .mr-20 {
   margin-right: 20px;
