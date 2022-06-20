@@ -1,8 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCircleCheck, faPen, faTrashCan
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons'
 const IconButtons = ({ taskList, taskDone, setUpdateTask, removeTask  })=> {
   return (
        {taskList && taskList.map( (task, index) => {
