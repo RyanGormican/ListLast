@@ -101,7 +101,9 @@ className="btn btn-lg btn-success"> Cancel</button>
   </>
   ) : (
   <AddTask
-    addTask, setAddTask, newTask
+    addTask={addTask}
+  setAddTask={setAddTask}
+newTask={newTask}
     />
   )}
     
