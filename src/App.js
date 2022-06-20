@@ -8,7 +8,7 @@ import {nanoid} from 'nanoid';
 import React, {useState, useEffect} from 'react';
 function App() {
   
-  const [taskList, setTaskList] = useState( [{taskId: nanoid(), taskText:'update the list with your tasks!', taskDone: false}]);
+  const [taskList, setTaskList] = useState( [{taskId: nanoid(), taskText:'Update the list with your tasks!', taskDone: false}]);
   const [addTask, setAddTask] = useState('');
   const [updateTask, setUpdateTask] = usetState('');
   
