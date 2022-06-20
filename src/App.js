@@ -76,7 +76,9 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     <h2> ListLast </h2>
     <br /><br />
   // Update Task
-      <div className="row>
+    {updateTask && updateTask ? (
+  <>
+      <div className="row">
     <div className="col">
     <input 
     value={ updateTask && updateTask.taskText }
@@ -91,9 +93,11 @@ className="btn btn-lg btn-success"> Update Task</button>
     </div>
     </div>
     <br />
-    
-  // New Task
-    <div className="row>
+  </>
+  ) : (
+  <>
+ // New Task
+    <div className="row">
     <div className="col">
     <input value={addTask} onChange={ (e) => setAddTask(e.target.value)}
     
@@ -103,7 +107,11 @@ className="btn btn-lg btn-success"> Update Task</button>
     <button onClick={newTask} className="btn btn-lg btn-success"> New Task</button>
     </div>
     </div>
-    <br />
+    <br />    
+  </>
+  );
+    
+
   
     {taskList && taskList.length ? '' : 'Nothing on the To do list!"
     {taskList && taskList.map( (task, index) => {
