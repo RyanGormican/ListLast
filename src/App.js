@@ -28,11 +28,17 @@ function App() {
    
  const removeTask = (taskId) => {
 const newList = taskList.filter((task)=> task.taskId !== taskId);   
-    setTaskList(newTaskList);
+    setTaskList(newList);
  }
  
   const taskDone = (taskId) => {
-     
+     let newList = taskList.map( task => { 
+       if( task.taskId === taskId) {
+         return ({ ...task, taskDone: !task.taskDone })
+       }
+       return task;
+     })
+     setTasjList(newList);
  }
   const taskIncomplete = () => {
      
