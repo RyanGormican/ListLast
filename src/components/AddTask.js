@@ -1,4 +1,4 @@
-const AddTask = ({ })=> {
+const AddTask = ({addTask, setAddTask,  newTask })=> {
   return (
       <>
  // New Task
