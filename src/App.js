@@ -19,6 +19,13 @@ function App() {
  const removeTask = (taskId) => {
      
  }
+ 
+  const taskDone = (taskId) => {
+     
+ }
+  const taskIncomplete = (taskId) => {
+     
+ }
   //  Retrieve from Local Storage 
   useEffect(() => {
       const getTasks = JSON.parse(localStorage.getItem('listlast-data'));
