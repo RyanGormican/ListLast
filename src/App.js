@@ -75,7 +75,6 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     <br /><br />
     <h2> ListLast </h2>
     <br /><br />
-  // Update Task
     {updateTask && updateTask ? (
  <UpdateTask
     updateTask = {updateTask}
