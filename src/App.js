@@ -5,6 +5,9 @@ import {
   faCircleCheck, faPen, faTrashCan
 } from '@fortawesome/free-solid-svg-icons';
 import {nanoid} from 'nanoid';
+import AddTask from './components/AddTask.js';
+import UpdateTask from './components/UpdateTask.js';
+import IconButtons from './components/IconButtons.js';
 import React, {useState, useEffect} from 'react';
 function App() {
   
