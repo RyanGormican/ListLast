@@ -1,4 +1,4 @@
-const UpdateTask = ({ })=> {
+const UpdateTask = ({updateTask, switchTask, changeTask, clearTask })=> {
   return (
       <>
       <div className="row">
