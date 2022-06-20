@@ -10,7 +10,7 @@ function App() {
   
   const [taskList, setTaskList] = useState( [{taskId: nanoid(), taskText:'Update the list with your tasks!', taskDone: false}]);
   const [addTask, setAddTask] = useState('');
-  const [updateTask, setUpdateTask] = usetState('');
+  const [updateTask, setUpdateTask] = useState('');
   
  const newTask = () => {
      if (taskList)
@@ -94,7 +94,7 @@ newTask={newTask}
 
   
     {taskList && taskList.length ? '' : 'Nothing on the To do list!'}
-   <IconButons
+   <IconButtons
      taskList = {taskList}
      taskDone = {taskDone}
      setUpdateTask = {setUpdateTask}
