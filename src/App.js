@@ -49,6 +49,9 @@ function App() {
     <br /><br />
     <h2> ListLast </h2>
     <br /><br />
+    
+    {taskList && taskList.length ? '' : 'Nothing on the To do list!"
+    
     </div>
   );
 }
