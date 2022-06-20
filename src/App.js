@@ -56,8 +56,8 @@ function App() {
       <React.Fragment key={task.taskId}>
       <div className="col taskBackground"> 
         <div className={task.taskDone ? 'isDone' : ''}>
-          
-          
+          <span className="taskText" {index + 1}</span>
+          <span className="taskText" {task.taskTesk} </span>
           </div>
         
         </div>
