@@ -99,7 +99,9 @@ function App() {
           <span title="Update">
           <FontAwesomeIcon icon={faPen} />
           </span>
-          <span title="Remove">
+          <span title="Remove"
+          onClick={() =>removeTask(task.taskId)}
+          >
          <FontAwesomeIcon icon={faTrashCan} />
           </span>
          </div>
