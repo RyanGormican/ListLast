@@ -89,7 +89,9 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     <button 
     onClick={changeTask}
 className="btn btn-lg btn-success"> Update Task</button>
-        <button className="btn btn-lg btn-success"> Cancel</button>
+        <button 
+ onClick={clearTask}
+className="btn btn-lg btn-success"> Cancel</button>
     </div>
     </div>
     <br />
