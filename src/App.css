@@ -19,3 +19,6 @@ body {
   opacity: 0.25;
   text-decoration: line-through;
 }
+.taskBackground .taskText {
+  flex: 1;
+}
