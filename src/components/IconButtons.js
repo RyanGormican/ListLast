@@ -12,7 +12,7 @@ const IconButtons = ({ taskList, taskDone, setUpdateTask, removeTask  }) => {
       <div className="col taskBackground"> 
         <div className={task.taskDone ? 'isDone' : ''}>
           <span className="taskRank" >{index + 1} </span>
-          <span className="taskText" >{task.taskTesk} </span>
+          <span className="taskText" >{task.taskText} </span>
           </div>
         <div className = "icons">
            <span title="Change Status"
