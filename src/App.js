@@ -108,7 +108,13 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
           </span>
 
 {task.taskDone ? null : (
-          <span title="Update">
+          <span title="Update"
+          onClick={ () => setUpdateTask({
+            taskId: task.taskId,
+            taskText: task.taskText,
+            taskDone: task.taskDone ? true : false
+            }) } 
+          >
           <FontAwesomeIcon icon={faPen} />
           </span>
 )}
