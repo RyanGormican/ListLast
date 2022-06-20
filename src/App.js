@@ -130,7 +130,9 @@ newTask={newTask}
           </span>
          </div>
         </div>
-      
+      </React.Fragment>
+)
+})
     }
     </div>
   );
