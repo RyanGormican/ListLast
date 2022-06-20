@@ -82,7 +82,7 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     switchTask = {switchTask}
     changeTask = {changeTask}
     clearTask = {clearTask}
-    />}
+    />
   ) : (
   <AddTask
     addTask={addTask}
