@@ -27,7 +27,8 @@ function App() {
  };
    
  const removeTask = (taskId) => {
-     
+const newList = taskList.filter((task)=> task.taskId !== taskId);   
+    setTaskList(newTaskList);
  }
  
   const taskDone = (taskId) => {
