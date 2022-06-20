@@ -55,6 +55,7 @@ function App() {
     return(
       <React.Fragment key={task.taskId}>
       <div className="col taskBackground"> 
+        <div className={task.taskDone ? 'isDone'}></div>
         
         </div>
       
