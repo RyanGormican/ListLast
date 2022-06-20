@@ -16,7 +16,7 @@ function App() {
      
  }
    
- const removeTask = () => {
+ const removeTask = (taskId) => {
      
  }
   //  Retrieve from Local Storage 
