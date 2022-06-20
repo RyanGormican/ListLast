@@ -91,10 +91,13 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
       <React.Fragment key={task.taskId}>
       <div className="col taskBackground"> 
         <div className={task.taskDone ? 'isDone' : ''}>
+          <span className="taskRank" >{index + 1} </span>
           <span className="taskText" >{task.taskTesk} </span>
           </div>
         <div className = "icons">
-           <span title="Change Status">
+           <span title="Change Status"
+          onClick={ (e) => taskDone(task.taskId) }
+            >
           <FontAwesomeIcon icon={faCircleCheck} />
           </span>
           <span title="Update">
