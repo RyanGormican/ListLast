@@ -9,13 +9,19 @@ import React, {useState, useEffect} from 'react';
 function App() {
   
   const [taskList, setTaskList] = useState( [{taskId: nanoid(), taskText:'update the list with your tasks!', taskDone: false}]);
-   useEffect(() => {
+ 
+  const [addTask, setAddTask] = useState('');
+  const [updateTask, setUpdateTask] = usetState('');
+  
+  //  Retrieve from Local Storage 
+  useEffect(() => {
       const getTasks = JSON.parse(localStorage.getItem('listlast-data'));
     if (getTasks){
      setTaskList(getTasks);   
     }
   },[]);
-   useEffect(() => {
+  // Update to Local Storage 
+  useEffect(() => {
       localStorage.setItem('listlast-data', JSON.stringify(taskList));
   }, [taskList]);
   
