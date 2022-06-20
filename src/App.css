@@ -5,3 +5,10 @@ body {
   background-color: #121212;
   color: white; 
 }
+.taskBackground {
+  background-color: #555;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+
+}
