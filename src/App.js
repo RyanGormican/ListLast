@@ -100,7 +100,7 @@ newTask={newTask}
      setUpdateTask = {setUpdateTask}
      removeTask = {removeTask}
       
-      >
+      />
     </div>
   );
 }
