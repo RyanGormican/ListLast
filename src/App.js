@@ -51,8 +51,10 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
      }
      setUpdateTask(newTask);
  }
-   const changeTask = (e) => {
-     
+   const changeTask = () => {
+     let filterList = [...taskList].filter( task => task.taskId !== updateTask.taskId);
+     let newList = [...filterList, updateTask];
+   setTaskList(newList);
  }
   //  Retrieve from Local Storage 
   useEffect(() => {
