@@ -1,9 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-imoprt { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCircleCheck, faPen, faTrashCan
-} from '@fortawesome/free-solid-svg-icons';
+
 import {nanoid} from 'nanoid';
 import AddTask from './components/AddTask.js';
 import UpdateTask from './components/UpdateTask.js';
@@ -97,43 +94,7 @@ newTask={newTask}
 
   
     {taskList && taskList.length ? '' : 'Nothing on the To do list!"
-    {taskList && taskList.map( (task, index) => {
-    return(
-      <React.Fragment key={task.taskId}>
-      <div className="col taskBackground"> 
-        <div className={task.taskDone ? 'isDone' : ''}>
-          <span className="taskRank" >{index + 1} </span>
-          <span className="taskText" >{task.taskTesk} </span>
-          </div>
-        <div className = "icons">
-           <span title="Change Status"
-          onClick={ (e) => taskDone(task.taskId) }
-            >
-          <FontAwesomeIcon icon={faCircleCheck} />
-          </span>
-
-{task.taskDone ? null : (
-          <span title="Update"
-          onClick={ () => setUpdateTask({
-            taskId: task.taskId,
-            taskText: task.taskText,
-            taskDone: task.taskDone ? true : false
-            }) } 
-          >
-          <FontAwesomeIcon icon={faPen} />
-          </span>
-)}
-          <span title="Remove"
-          onClick={() =>removeTask(task.taskId)}
-          >
-         <FontAwesomeIcon icon={faTrashCan} />
-          </span>
-         </div>
-        </div>
-      </React.Fragment>
-)
-})
-    }
+   <
     </div>
   );
 }
