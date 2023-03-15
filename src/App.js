@@ -6,6 +6,8 @@ import AddTask from './components/AddTask.js';
 import UpdateTask from './components/UpdateTask.js';
 import IconButtons from './components/IconButtons.js';
 import React, {useState, useEffect} from 'react';
+import { Icon } from '@iconify/react';
+
 function App() {
   
   const [taskList, setTaskList] = useState( [{taskId: nanoid(), taskText:'Update the list with your tasks!', taskDone: false}]);
