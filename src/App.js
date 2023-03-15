@@ -74,6 +74,17 @@ const newList = taskList.filter((task)=> task.taskId !== taskId);
     <div className="container App">
     <br /><br />
     <h2> ListLast </h2>
+    <span>
+        <a href="https://www.linkedin.com/in/ryangormican/">
+		    <Icon icon="mdi:linkedin" color="#0e76a8" width="40" />
+	    </a>
+	    <a href="https://github.com/RyanGormican/ListLast">
+		    <Icon icon="mdi:github" color="#e8eaea" width="40" />
+	    </a>
+        <a href="https://ryangormicanportfoliohub.vercel.app/">
+		    <Icon icon="teenyicons:computer-outline" color="#199c35" width="40" />
+	    </a>
+    </span>
     <br /><br />
     {updateTask && updateTask ? (
  <UpdateTask
